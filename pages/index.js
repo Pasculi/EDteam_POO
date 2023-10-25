@@ -8,14 +8,18 @@ const java = new Curso("Curso de Java", "https://edteam-media.s3.amazonaws.com/c
 
 const poo = new Curso("Javascript: Programación OO", "https://edteam-media.s3.amazonaws.com/courses/big/cbe73fb7-2693-4e9c-a6c5-6cdd94b695e0.png", 22);
 
-html._getTemplate()
-css._getTemplate()
-java._getTemplate()
-html._getTemplate()
-css._getTemplate()
-java._getTemplate()
-html._getTemplate()
-css._getTemplate()
+const formu = document.querySelector('.form');
+
+formu.addEventListener("submit", (evt) => {
+    evt.preventDefault();
+    console.log(evt.target.nombreCurso.value)
+    console.log(evt.target.numeroClases.value)
+    console.log(evt.target.urlCurso.value)
+    const curso = new Curso(evt.target.nombreCurso.value,evt.target.urlCurso.value, evt.target.numeroClases.value)
+    curso._getTemplate()
+})
+
+
 java._getTemplate()
 html._getTemplate()
 css._getTemplate()
