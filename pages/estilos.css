@@ -1,0 +1,57 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.card-container{
+  width: 250px;
+  box-shadow: 0 10px 10px rgb(151, 150, 150);
+  
+}
+.card-container:hover{
+  transform: scale(1.03);
+}
+img{
+  width : 100%;
+  object-fit: contain;
+  
+
+
+}
+.card-nombre{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding:0 8px;
+}
+.section{
+  display:flex;
+  flex-wrap: wrap;
+  width: 100%;
+   row-gap:30px;
+  column-gap: 30px;
+  justify-content:space-evenly;
+  
+  
+  
+}
+.num-clases{
+  color:red;
+}
+
+.fieldset{
+  margin-top: 50px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  
+  height: 300px;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+  height: 100%;
+}

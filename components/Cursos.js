@@ -5,29 +5,16 @@ export default class Curso{
         this.clases = clases;
         this.inscritos = [];
     }
-    getNombre(){
-        return this.nombre
-    }
-    setNombre(nombreCurso){
-        return this.nombre = nombreCurso;
-    }
-    getPoster(){
-        return this.poster
-    }
-    setPoster(urlPoster){
-        return this.poster = urlPoster;
-    }
-    getClases(){
-        return this.clases
-    }
-    setClases(numClases){
-        return this.clases = numClases;
-    }
-    getIncristos(){
-        return this.clases
-    }
-    setInscritos(inscritos){
-        return this.inscritos = inscritos;
+    _getTemplate() {
+        const cardTemplate = document.querySelector('template').content;
+        const cardElement = cardTemplate.querySelector('.card-container').cloneNode(true);
+        const section = document.querySelector('.section');
+        cardElement.querySelector('.card__img').src = `${this.poster}`;
+        cardElement.querySelector('.card__img').alt = `${this.nombre}`;
+        cardElement.querySelector('.card-title').textContent = `${this.nombre}`;
+        cardElement.querySelector('.num-clases').textContent = `clases: ${this.clases}`;
+        section.prepend(cardElement);
     }
 }
+
 

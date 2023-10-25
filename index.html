@@ -1,15 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://ux.ed.team/css/styles.css?201803301710">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://ux.ed.team/css/styles.css?201803301710"
+    />
+    <link rel="stylesheet" href="./pages/estilos.css">
     <title>EDcursos</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="ed-grid">
-        <h1>EDcursos con POO</h1>
-        <script type="module" src="./pages/index.js"></script>
+      <h1>EDcursos con POO</h1>
+      <div class="section">
+        
+      </div>
+      <template class="template">
+       <div class="card-container">
+        <div class="card-imagen">
+          <img class="card__img" src="https://edteam-media.s3.amazonaws.com/courses/big/3a60cffc-3dab-4542-acd4-517c11edb103.png" alt="">
+        </div>
+        <div class="card-nombre">
+          <p class="card-title">HTML desde Cero</p>
+          <p class="num-clases">clases: 16</p>
+        </div>
+       </div>
+    </template>
+
+<fieldset class="fieldset">
+  <legend>Ingresar Curso</legend>
+  <form action="" class="form">
+    <div class="group-input">
+      <input type="text" name="" id="" placeholder="Nombre" required minlength="8" maxlength="40">
     </div>
-</body>
+    <div class="group-input">
+      <input type="number" name="" id="" placeholder="Numero de clases" required min="1">
+    </div>
+     <div class="group-input">
+      <input type="url" name="" id="" placeholder="Url" required>
+    </div>
+    <button class="button second-color" type="submit">Enviar</button>
+  </form>
+</fieldset>
+
+    <script type="module" src="./pages/index.js"></script>
+  </body>
 </html>
